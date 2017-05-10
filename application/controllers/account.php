@@ -193,4 +193,11 @@ public function inventory()
 				redirect(base_url(''));
 			}
 	}
+
+	public function test()
+	{
+		$this->load->model("mongodb_model");
+		$this->mongodb_model->data();
+
+	}
 }

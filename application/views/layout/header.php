@@ -68,7 +68,6 @@
                         </li>
                     <li>
                         <a href="<?php echo base_url('payroll')?>">Payroll</a>
-                        <p>Hello WOrld</p>
                     </li>
                 </ul> 
                 <ul class=" nav navbar-right navbar-nav">

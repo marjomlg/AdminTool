@@ -1,16 +1,4 @@
 <?php
-<<<<<<< HEAD
-	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
-		$uri = 'https://';
-	} else {
-		$uri = 'http://';
-	}
-	$uri .= $_SERVER['HTTP_HOST'];
-	header('Location: '.$uri.'/dashboard/');
-	exit;
-?>
-Something is wrong with the XAMPP installation :-(
-=======
 /**
  * CodeIgniter
  *
@@ -302,4 +290,3 @@ switch (ENVIRONMENT)
  * And away we go...
  */
 require_once BASEPATH.'core/CodeIgniter.php';
->>>>>>> fa4511f3c5acf17cae5154497a5638c32d2a1e46

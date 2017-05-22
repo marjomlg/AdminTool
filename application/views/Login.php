@@ -14,8 +14,6 @@
     <link href="<?php echo base_url('assets/bootstrap/css/bootstrap.css')?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/bootstrap/css/logo-nav.css')?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/font-awesome/css/font-awesome.css')?>" rel="stylesheet">
-
-   
   </head>
 
   <body>

@@ -4335,14 +4335,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-form {
-    width: auto;
+       width: auto;
     border: 0;
-    margin-left: 0;
-    margin-right: 0;
+    /* margin-left: 0; */
+    /* margin-right: 0; */
+    /* padding-right: 74px; */
     padding-top: 0;
     padding-bottom: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
+}
   }
 }
 .navbar-nav > li > .dropdown-menu {

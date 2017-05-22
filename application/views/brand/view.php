@@ -36,7 +36,12 @@
 </ul>-->
 	</br>
 		<div class="col-md-4">
-		<?php echo form_input('keyword', $this->input->get('keyword'), 'class="form-control text-center" placeholder="Search Product"'); ?>
+		<!--<?php echo form_input('keyword', $this->input->get('keyword'), 'class="form-control text-center" placeholder="Search Product"'); ?>-->
+		<?php echo form_open('billing/view', array('method' => 'GET', 'class' => 'navbar-form navbar-left', 'role' => 'Search')); ?>
+			<div class="form-group">
+			   <?php echo form_input('keyword', $this->input->get('keyword'), 'class="form-control text-center" placeholder="Search Product"'); ?>
+			</div>		
+		<?php echo form_close(); ?>
 		</div>
 		<div class="col-md-8">
 			<div class="col-md-2 col-md-push-6">
@@ -45,7 +50,7 @@
 			<div class="col-md-2 col-md-push-6">
 				<button type="button" class="btn btn-block" onClick="window.location.href='<?php echo base_url('brands/create')?>';return false;">Add</button>
 			</div>
-			<div class="col-md-2 col-md-push-6">
+			<div class="col-md-2 col-md-push-6"> 
 				<button type="button" class="btn btn-block" onClick="window.location.href='<?php echo base_url('brands/delete_view')?>';return false;">Remove</button>
 			</div>
 		</div>

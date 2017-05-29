@@ -35,25 +35,25 @@
 
 </ul>-->
 	</br>
-		<div class="col-md-4">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 		<!--<?php echo form_input('keyword', $this->input->get('keyword'), 'class="form-control text-center" placeholder="Search Product"'); ?>-->
 		<?php echo form_open('billing/view', array('method' => 'GET', 'class' => 'navbar-form navbar-left', 'role' => 'Search')); ?>
 			<div class="form-group">
 			   <?php echo form_input('keyword', $this->input->get('keyword'), 'class="form-control text-center" placeholder="Search Product"'); ?>
 			</div>		
 		<?php echo form_close(); ?>
+	</div>
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 adjust">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<button type="button" class="btn btn-block" onClick="window.location.href='<?php echo base_url('brands/edit')?>';return false;">Update</button>
 		</div>
-		<div class="col-md-8">
-			<div class="col-md-2 col-md-push-6">
-				<button type="button" class="btn btn-block" onClick="window.location.href='<?php echo base_url('brands/edit')?>';return false;">Update</button>
-			</div>
-			<div class="col-md-2 col-md-push-6">
-				<button type="button" class="btn btn-block" onClick="window.location.href='<?php echo base_url('brands/create')?>';return false;">Add</button>
-			</div>
-			<div class="col-md-2 col-md-push-6"> 
-				<button type="button" class="btn btn-block" onClick="window.location.href='<?php echo base_url('brands/delete_view')?>';return false;">Remove</button>
-			</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<button type="button" class="btn btn-block" onClick="window.location.href='<?php echo base_url('brands/create')?>';return false;">Add</button>
 		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
+			<button type="button" class="btn btn-block" onClick="window.location.href='<?php echo base_url('brands/delete_view')?>';return false;">Remove</button>
+		</div>
+	</div>	
 		</br></br>
 			<hr style="border: none; border-bottom: 1px solid #999999;">
 			<div class="panel-heading">Results</div>

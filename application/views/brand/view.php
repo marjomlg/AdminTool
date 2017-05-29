@@ -65,7 +65,7 @@
 
 				<?php echo form_open('brands/updated_status',array('class'=>'form-horizontal'));?>
 				
-				<table class="table table-hover text-center">
+				<table id="example3" class="table table-hover text-center">
 					<tr>
 					<!--<td>
 						Option<br>
